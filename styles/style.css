@@ -53,7 +53,7 @@ main {
 }
 /*** image acceuil ***/
 .background {
-  background-image: url(ressources/images/hero-banner.png);
+  background-image: url(/ressources/images/hero-banner.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,23 +179,23 @@ button:hover {
   padding: 0 2em 0 2em;
 }
 .cat {
-  background-image: url(ressources/images/catastrophic.png);
+  background-image: url(/ressources/images/catastrophic.png);
 }
 .carotte {
-  background-image: url(ressources/images/carotte-woman.png);
+  background-image: url(/ressources/images/carotte-woman.png);
 }
 .ultra {
-  background-image: url(ressources/images/ultraquenarde.png);
+  background-image: url(/ressources/images/ultraquenarde.png);
   background-position: top;
 }
 .poulpy {
-  background-image: url(ressources/images/poulpy.png);
+  background-image: url(/ressources/images/poulpy.png);
 }
 .orang {
-  background-image: url(ressources/images/oran-wu-tang-clan.png);
+  background-image: url(/ressources/images/oran-wu-tang-clan.png);
 }
 .superime {
-  background-image: url(ressources/images/superime.png);
+  background-image: url(/ressources/images/superime.png);
   background-position: right;
 }
 .text-hero-hover {
