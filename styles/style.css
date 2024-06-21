@@ -1,0 +1,394 @@
+* {
+  color: #fff;
+}
+
+body {
+  font-family: "Satoshi-Regular";
+  background-color: black;
+}
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/****** HEADER ******/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00000050;
+  z-index: 1;
+}
+
+.header-band {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 4rem 2rem 4rem;
+}
+.header-band h1 {
+  font-family: "Satoshi-Black";
+  font-size: 1.5em;
+}
+.lien {
+  display: flex;
+  flex-direction: row;
+}
+.lien a {
+  text-decoration: none;
+  padding: 1em;
+  font-weight: 600;
+  transition: font-style 0.1s ease-in-out;
+}
+.lien a:hover {
+  color: #a29bfe;
+}
+
+/****** MAIN ******/
+main {
+  padding-top: 8em;
+}
+/*** image acceuil ***/
+.background {
+  background-image: url(ressources/images/hero-banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 95%;
+  height: 912px;
+  border-radius: 15px;
+  margin: 0 auto;
+  filter: sepia(30%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.background-htwo {
+  font-family: "Satoshi-Black";
+  font-size: 4.5rem;
+  font-weight: 900;
+  padding-bottom: 2rem;
+}
+.background p {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.subtitle {
+  font-family: "Satoshi-Black";
+  width: 100%;
+  text-align: center;
+  padding: 5rem 0 5rem 0;
+  font-size: 2rem;
+}
+.purple {
+  color: #a29bfe;
+}
+/*** Services ***/
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  margin: 0 3em 0 3em;
+}
+.grid {
+  border: #a29bfe solid 1px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-column {
+  grid-row: span 2;
+}
+.grid-row {
+  grid-column: span 2;
+}
+.title {
+  padding-top: 1em;
+  font-family: "Satoshi-Black";
+  font-size: 1.3em;
+  color: #a29bfe;
+}
+.sub {
+  padding-top: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+button {
+  margin-top: 1.3em;
+  padding: 0.5em 0.7em 0.5em 0.7em;
+  font-family: "Satoshi-Black";
+  font-size: 1em;
+  background-color: #a29bfe;
+  border-radius: 10px;
+  border: none;
+}
+button:hover {
+  background-color: #fff;
+  color: #a29bfe;
+}
+.condition {
+  font-size: 0.8em;
+  text-align: center;
+  margin: 2em 3em 2em 3em;
+}
+/*** Héros ***/
+.heros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.heros-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 1em;
+  width: 30%;
+  height: 300px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  transition: transform 1s ease-in-out;
+}
+.text-heros {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50%;
+  width: 100%;
+  background-color: #00000050;
+}
+.text-heros h5 {
+  font-family: "Satoshi-Black";
+  font-size: 1.5rem;
+}
+.text-heros p {
+  padding: 0 2em 0 2em;
+}
+.cat {
+  background-image: url(ressources/images/catastrophic.png);
+}
+.carotte {
+  background-image: url(ressources/images/carotte-woman.png);
+}
+.ultra {
+  background-image: url(ressources/images/ultraquenarde.png);
+  background-position: top;
+}
+.poulpy {
+  background-image: url(ressources/images/poulpy.png);
+}
+.orang {
+  background-image: url(ressources/images/oran-wu-tang-clan.png);
+}
+.superime {
+  background-image: url(ressources/images/superime.png);
+  background-position: right;
+}
+.text-hero-hover {
+  font-style: italic;
+  text-align: center;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  transition: top 1.5s;
+  background-color: #a29bfe80;
+}
+.text-hero-hover p {
+  padding: 2em;
+}
+.heros-content:hover .text-hero-hover {
+  top: 0;
+}
+.heros-content:hover {
+  transform: scale(1.1);
+}
+.center {
+  display: block;
+  height: 3em;
+  margin: 2em auto;
+}
+.center strong {
+  text-transform: uppercase;
+}
+/*** témoignages ***/
+.temoins {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.fiche-temoins {
+  margin: 2em 1em 2em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.fiche-temoins img {
+  position: absolute;
+  border: #a29bfe solid 5px;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.text-hover {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 12em 2em 5em 2em;
+  width: 310px;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 150px auto 0;
+  text-align: center;
+  background: #8781d3;
+  border-radius: 15px;
+}
+.identity {
+  padding-bottom: 1em;
+  margin: auto;
+  font-family: "Satoshi-Black";
+}
+.description {
+  font-family: "Satoshi-LightItalic";
+}
+/*** Formulaire ***/
+.form {
+  display: flex;
+  justify-content: center;
+}
+form {
+  width: 40%;
+}
+.donnee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.donnee label {
+  margin: 1.5rem 0 0.4rem;
+  font-weight: 800;
+  font-size: 0.9em;
+}
+input,
+select,
+textarea {
+  font-family: "Satoshi-Regular";
+  font-weight: 600;
+  padding: 0 10px 0;
+  outline: 1;
+  outline-color: #a29bfe;
+  border: 0 none;
+  box-shadow: none;
+  box-sizing: border-box;
+  background-color: #4d4d4d;
+  width: 100%;
+  height: 3em;
+  border-radius: 10px;
+}
+textarea {
+  height: 8em;
+}
+/****** FOOTER ******/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #a29bfe;
+  height: 200px;
+  border-top-left-radius: 150px 50px;
+  border-top-right-radius: 150px 50px;
+}
+.footer-band {
+  text-align: center;
+}
+.footer-band h1 {
+  font-family: "Satoshi-Black";
+  font-size: 1.5rem;
+  padding-bottom: 1em;
+}
+.lien--footer a:hover {
+  color: #000;
+}
+footer p {
+  font-size: 0.8em;
+}
+
+/****** Reponsive ******/
+/***Tablette***/
+
+@media (max-width: 768px) {
+  .background {
+    text-align: center;
+  }
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid {
+    text-align: center;
+  }
+  .grid-column {
+    grid-row: span 1;
+  }
+  .grid-row {
+    grid-column: span 1;
+  }
+  .grid-media {
+    grid-column: span 2;
+  }
+  .heros-content {
+    width: 45%;
+  }
+  .heros-content:hover {
+    background-size: cover;
+  }
+  form {
+    width: 80%;
+  }
+}
+@media (max-width: 425px) {
+  .header-band {
+    justify-content: center;
+  }
+  .header-band nav {
+    display: none;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-media {
+    grid-column: span 1;
+  }
+  .heros-content {
+    width: 90%;
+  }
+  .temoins {
+    flex-direction: column;
+  }
+  .fiche-temoins {
+    align-items: center;
+  }
+  .fiche-temoins img {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
