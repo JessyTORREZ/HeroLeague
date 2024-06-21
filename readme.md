@@ -1,12 +1,8 @@
+**Voici l'un des premiers gros exercices que nous avons eu après avoir achevé nos modules sur html et css. je vous ai laissé les consignes ci-dessous**
+
 # Heros League a besoin toi !
 
 **Heros League&trade;** est une société de mise à disposition de **super-héros** pour des situations d'urgence en tout genre. Nous avons besoin de toi pour créer un site web qui permettra de présenter nos différents services et de pouvoir lancer un appel à l'aide.
-
-Pour l'instant ce n'est qu'**une page d'accueil**, mais on te recontactera rapidement pour **ajouter de nouvelles fonctionnalités.**
-
-**Prêt à servir la League ?** :muscle: :rocket:
-
-Tu trouveras dans les **ressources** tout ce dont tu as besoin pour réaliser ce projet.
 
 ## Consignes
 
